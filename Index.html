@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscriber Counter</title>
+    <link rel="icon" href="Official_Buzfas_logo.jpg" type="image/jpeg"> <!-- Favicon -->
+    <style>
+        body {
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('Background.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex; /* Use flexbox for side-by-side layout */
+            align-items: center; /* Align items vertically in the center */
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s ease-in-out;
+            background-color: #121212;
+            max-width: 700px; /* Limit maximum width */
+            margin-bottom: 20px; /* Space between sections */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+            height: 80px; /* Set the height of the container */
+        }
+        .container iframe {
+            border: 0;
+            border-radius: 15px;
+            width: 300px; /* Fixed width of the iframe */
+            height: 100%; /* Make iframe height match the container height */
+        }
+        .button-wrapper {
+            margin-left: 20px; /* Adds space between the iframe and button */
+        }
+        .subscribe-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+            text-decoration: none; /* Remove underline from the link */
+            line-height: 60px; /* Center button text vertically */
+            height: 60px; /* Match button height with iframe */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .subscribe-button:hover {
+            background-color: darkred;
+        }
+        .discord-widget {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: black;
+            padding: 10px;
+            width: 350px; /* Width of the Discord widget */
+            height: 500px; /* Height of the Discord widget */
+            margin: 20px; /* Margin around the Discord widget */
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <iframe src="https://livecounts.io/embed/youtube-live-subscriber-counter/UCW3fUchDcdHsCT14OTKgu1A"></iframe>
+        <div class="button-wrapper">
+            <a href="https://youtube.com/@Buzfas" target="_blank" class="subscribe-button">Subscribe</a>
+        </div>
+    </div>
+    <div class="discord-widget">
+        <iframe src="https://discord.com/widget?id=1267326392463392832&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </div>
+</body>
+</html>
